@@ -1,0 +1,128 @@
+body {
+    background-color: #e1e1e1;
+}
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    height: 56px;
+    top: 0;
+    font-size: 16px;
+    z-index: 100000;
+}
+
+nav svg {
+    width: 28px;
+    height: 28px;
+    margin-left: 30px;
+}
+
+.site-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-name {
+
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.site-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-tab a {
+    color: #222222;
+    margin-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.site-tab a:hover {
+    color: #fb7299;
+}
+
+.content-container {
+    margin-top: 56px;
+}
+
+.bg-post-container {
+    width: 100vw;
+    position: relative;
+}
+
+.bg-post-container img {
+    width: 100vw;
+}
+
+.bg-post-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.bg-post-tab-container {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateY(-80px);
+}
+
+.bg-post-tab {
+    border-radius: 20px;
+    border: 4px solid #000000;
+    overflow: hidden;
+}
+
+.bg-post-tab img {
+    width: 200px;
+    height: 137px;
+    object-fit: cover;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.bg-post-tab img:hover {
+    width: 200px;
+    height: 137px;
+    object-fit: cover;
+    transform: scale(1.5);
+}
+
+.introduction-container {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+    padding: 0 20px;
+    height: 440px;
+    border-radius: 4px;
+    border: 2px solid #000000;
+}
+
+.introduction:last-child{
+    margin-left: 20px;
+}
+
+.introduction h2 {
+    font-size: 15px;
+    text-align: center;
+
+}
